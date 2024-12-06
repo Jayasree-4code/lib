@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+    <nav>
+        <a href="#search">Search Books</a>
+        <a href="#booklist">Book List</a>
+        <a href="#users">User Management</a>
+    </nav>
+    <main>
+        <section id="search">
+            <h2>Search Books</h2>
+            <form>
+                <label for="search-bar">Search:</label>
+                <input type="text" id="search-bar" name="search" placeholder="Enter book title or author">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="booklist">
+            <h2>Book List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>To Kill a Mockingbird</td>
+                        <td>Harper Lee</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1984</td>
+                        <td>George Orwell</td>
+                        <td>Dystopian</td>
+                        <td>Checked Out</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="users">
+            <h2>User Management</h2>
+            <form>
+                <label for="user-name">User Name:</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Enter user name">
+                <button type="submit">Add User</button>
+            </form>
+            <h3>Registered Users</h3>
+            <ul>
+                <li>John Doe</li>
+                <li>Jane Smith</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Library Management System. All rights reserved.
+    </footer>
+</body>
+</html>
